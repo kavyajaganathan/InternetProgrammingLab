@@ -1,0 +1,127 @@
+body {
+    background-color: #fff;
+    background-image: linear-gradient(to bottom right, #fc4a1a,#f7b733);
+    align-items: center;
+}
+.main-title {
+    background-color: #ff2220;
+    width: 70vw;
+    height: 25vh;
+    margin-top: 10%;
+    margin-left: 15%;
+    border-radius: 10px 10px 10px 10px;
+    padding-top: 30px;
+}
+.title {
+    text-align: center;
+    font-size: 60;
+    font-family: sans-serif;
+    margin-top: 0px;
+    color:  #fff;
+}
+.button-box{
+    height: 100px;
+    width: 300px;
+    margin-left: 37vw;
+    margin-top: 10%;
+}
+.my-button {
+    background-color: #0022bb;
+    height: 40px;
+    width: 120px;
+    text-align: center;
+    border-radius: 10px 10px 10px 10px;
+    font-size: 24;
+    border-color: #000000;
+    margin-left: 20px;
+}
+.my-button:hover {
+    height: 42px;
+    width: 122px;
+}
+a {
+    font-size: 24;
+    color: #fff; 
+}
+a:link { 
+    text-decoration: none; 
+} 
+a:hover { 
+    text-decoration: none; 
+} 
+.login-box {
+    height: 35vh;
+    width: 30vw;
+    padding-top: 40px;
+    padding-left: 60px;
+    margin-top: 20vh;
+    margin-left: 35vw; 
+    background-color: #bfbfbf;
+    border-radius: 10px;
+}
+.login-text {
+    margin-top: 0px;
+    font-size: 24;
+    font-family: serif;
+}
+.username {
+    width: 200px;
+    height: 40px;
+    margin-left: 100px;
+    font-size: 22;
+    font-family: serif;
+}
+.pwd {
+    width: 200px;
+    height: 40px;
+    margin-left: 115px;
+    font-size: 22;
+    font-family: serif;
+}
+.signup-box {
+    height: 40vh;
+    width: 30vw;
+    padding-top: 40px;
+    padding-left: 60px;
+    margin-top: 20vh;
+    margin-left: 35vw; 
+    background-color: #bfbfbf;
+    border-radius: 10px;
+}
+.card {
+    background-image: linear-gradient(to bottom right, #007991,#78ffd6);
+    border-radius: 10px;
+    width: 30%;
+    height: 55%;
+    text-align: center;
+    margin: 20px;
+    transition: box-shadow 1s;
+}
+.card:hover {
+    box-shadow: 10px 10px rgb(56, 53, 53);
+}
+.card-2 {
+    border-radius: 10px 10px 10px 10px;
+    width: 30%;
+    height: 55%;
+    background: white;
+    text-align: center;
+    margin: 20px;
+    transition: box-shadow 0.3s;
+}
+.card-main{
+    border-radius: 10px 10px 10px 10px;
+    width: 50%;
+    height: 80%;
+    background: white;
+    text-align: center;
+    padding: 20px;
+    margin-left: 25%;
+    margin-top: 3%;
+}
+.inp {
+    margin: 10px;
+}
+img {
+    border-radius: 10px 10px 10px 10px;
+}
