@@ -34,16 +34,16 @@ function validate() {
 		result.innerHTML = result.innerHTML + "City must be Delhi, Mumbai, Kolkata or Chennai!<br>";
 	}
 
-	if(mobile.value.match(/[(]\+91[)][0-9]{10}/g)== null || mobile.value.match(/[(]\+91[)][0-9]{10}/g)[0] != mobile.value)
+	if(mobile.value.match(/[(]\+91[)][0-9]{10}/g) == null || mobile.value.match(/[(]\+91[)][0-9]{10}/g)[0] != mobile.value)
 	{
 		result.innerHTML = result.innerHTML + "Follow mobile format (+91)xxxxxxxxxx<br>";
 	}
 
-	if(email.value.match(/[a-zA-Z\-_.0-9]+@[a-zA-Z\-_0-9]+[.]+[a-zA-Z\-_0-9.]+/g) == null || email.value.match(/[a-zA-Z\-_.0-9]+@[a-zA-Z\-_0-9]+[.]+[a-zA-Z\-_0-9.]+/g)[0] != email.value )
+	if(email.value.match(/[a-zA-Z\-_.0-9]+@[a-zA-Z\-_0-9]+[.]+[a-zA-Z\-_0-9.]+/g) == null || email.value.match(/[a-zA-Z\-_.0-9]+@[a-zA-Z\-_0-9]+[.]+[a-zA-Z\-_0-9.]+/g)[0] != email.value)
 	{
 		result.innerHTML = result.innerHTML + "Enter Valid email!<br>";
 	}
-	if(rating.value.match(/[1-5]{1}/g).length != 1 )
+	if(rating.value.match(/[1-5]{1}/g).length != 1 && rating.value.match(/[1-5]{1}/g) != rating.value)
 	{
 		result.innerHTML = result.innerHTML + "Must be 1-5 rating!";
 	}

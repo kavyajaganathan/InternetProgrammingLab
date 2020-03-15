@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>XML Parser</title>
+    </head>
+    <body>
+        <div>
+            <input type="string" name="userid" id ="user"/>
+            <button onclick="getUser()">Submit</button>
+        </div>
+        <p id="display"></p>
+        <script>
+            function tabulate(xml) {
+                xmlDoc = xml.responseXML
+                myId = document.getElementById("user").value
+                var n = 10
+                console.log(myId)
+                var i = 0
+                var s = " "
+                var ref = xmlDoc.getElementsByTagName("user_info")[0]
+                for(i = 0; i < n; i++) {
+                    if(ref.getElementsByTagName("user")[i].getElementsByTagName("id")[0].innerHTML === myId) {
+                        s = "<table border=1pt><tr><th>ID</th><th>Name</th><th>Age</th> <th>Designation</th><th>Phone</th></tr><tr>"
+                        s = s + "<td>" + ref.getElementsByTagName("user")[i].getElementsByTagName("id")[0].innerHTML + "</td>"
+                        s = s + "<td>" + ref.getElementsByTagName("user")[i].getElementsByTagName("name")[0].innerHTML + "</td>"
+                        s = s + "<td>" + ref.getElementsByTagName("user")[i].getElementsByTagName("age")[0].innerHTML + "</td>"
+                        s = s + "<td>" + ref.getElementsByTagName("user")[i].getElementsByTagName("designation")[0].innerHTML + "</td>"
+                        s = s + "<td>" + ref.getElementsByTagName("user")[i].getElementsByTagName("phone")[0].innerHTML + "</td>"
+                        s = s + "</tr></table>"
+                        break
+                    }
+                }
+                if(i == n) {
+                    s = "No such record."
+                }
+                document.getElementById("display").innerHTML = s
+            }
+            function getUser() {
+                xmlhttp = new XMLHttpRequest()
+                xmlhttp.open("GET", "user.xml")
+                xmlhttp.send()
+                xmlhttp.onreadystatechange = function() {
+                    if(this.readyState == 4 && this.status == 200) {
+                        tabulate(this);
+                    }
+                };
+            }
+        </script>
+    </body>
+</html>

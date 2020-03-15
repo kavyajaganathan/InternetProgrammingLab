@@ -23,3 +23,17 @@ function change5() {
 	var element = document.querySelector("#h5");
 	element.style = "animation: animate 3s infinite;"
 }
+
+function allowDrop(ev) {
+	ev.preventDefault();
+}
+
+function drag(ev) {
+	ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+	ev.preventDefault();
+	var data = ev.dataTransfer.getData("text");
+	ev.target.appendChild(document.getElementById(data));
+}

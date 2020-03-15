@@ -1,73 +1,8 @@
-<!DOCTYPE html>
 <html>
-<head>
-	<title>DOM Ex4</title>
-</head>
-<body style="background-color: #ccccee; font-family: sans-serif;">
-	<style type="text/css">
-		.style1 {
-			font-size: 20px;
-			color: #7c69a5;
-			margin-top: 10px;
-			margin-left: 10px;
-		}
-		.style2 {
-			font-size: 30px;
-			color: #90b337;
-			margin-top: 10px;
-			margin-left: 10px;
-		}
-		.style3 {
-			font-size: 40px;
-			color: #c94038;
-			margin-top: 10px;
-			margin-left: 10px;
-		}
-		.style4 {
-			font-size: 20px;
-			color: #407db8;
-			margin-top: 10px;
-			margin-left: 10px;
-		}
-		@keyframes animate {
-			from { color: #000000; }
-			to { color: #ffffff; }
-		}
-	</style>
-	<div id="olddiv">
-		<p id="p1" class="style3">This is a Paragraph with ID p1.</p>
-		<p id="p2" class="style3">
-			This whole thing starts p2.
-			<span id="s1" class="style2">This is span s1 inside p2.</span>
-			This is the end of p2.
-		</p>
-	</div>
-	<a id="a1" href="#" class="style4">This links to a wonderful page.</a>
-	<p id="p3" class="style1">This is p3.</p>
-	<div id="newdiv"></div>
-	<br><br>
-	<div>
-		<h2>Manipulation</h2>
-		<h3>Change content</h3>
-		ID:<input id="id1" type="text">
-		Content:<input id="content1" type="text">
-		<button id="change1" onclick="change1()">Change</button>
-		<br><br>
-		<h3>Change style</h3>
-		ID:<input id="id2" type="text">
-		Style:<input id="style2" type="text">
-		<button id="change2" onclick="change2()">Change</button>
-		<br><br>
-		<h3>Append content</h3>
-		Tag:<input id="tag3" type="text">
-		Content:<input id="content3" type="text">
-		<button id="change3" onclick="change3()">Change</button>
-		<h3>Delete content</h3>
-		ID:<input id="id4" type="text">
-		<button id="change4" onclick="change4()">Change</button>
-		<h3 id="h5">Some animation</h3>
-		<button id="change5" onclick="change5()">Change</button>
-	</div>
-	<script type="text/javascript" src="./script.js"></script>
+<body>
+    <form action="welcome" method="GET">
+        Enter your name <input type="text" name="name"><br>
+        <input type="submit" value="Login">
+    </form>
 </body>
 </html>
