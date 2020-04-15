@@ -1,0 +1,13 @@
+<web-app>
+
+<servlet>
+<servlet-name>Coffee Selection</servlet-name>
+<servlet-class>MVCdemo.Controller.CoffeeSelect</servlet-class>
+</servlet>
+
+<servlet-mapping>
+<servlet-name>Coffee Selection</servlet-name>
+<url-pattern>/coffee</url-pattern>
+</servlet-mapping>
+
+</web-app>

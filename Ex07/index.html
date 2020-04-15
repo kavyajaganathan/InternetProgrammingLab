@@ -1,0 +1,30 @@
+<html>
+    <title>
+        Welcome to the Student Result Portal
+    </title>
+    <body style="align-content: center; text-align: center;">
+        <h1>
+            Exam Results (Apr-May 2020)
+        </h1>
+        <div style="margin-top: 10vh; margin-left: 0vw;">
+            <b>Username:</b> <input id="name" type="text" style="width: 10vw;"/><br/></br></br>
+            <b>Password:</b> <input id="password" type="password" style="width: 10vw;"/> <br/></br></br>
+            <button onclick= validate()> Submit </button>
+            <p id="demo"style="align-content: center; text-align: center;"></p>
+        </div>
+        <script>
+            function validate() {
+                var xhttp = new XMLHttpRequest();
+                xhttp.open("POST", "ServletPost", true);
+                xhttp.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+                xhttp.send("name=" + document.getElementById("name").value + "&password=" + document.getElementById("password").value);
+                console.log("name=" + document.getElementById("name").value +"&password=" + document.getElementById("password").value);
+                xhttp.onreadystatechange = function() {
+                    if (this.readyState == 4 && this.status == 200) {
+                        document.getElementById("demo").innerHTML = this.responseText;
+                    }
+                };       
+            }
+        </script>
+    </body>
+</html>

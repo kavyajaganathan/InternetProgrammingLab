@@ -17,7 +17,7 @@ public class CoffeeSelect extends HttpServlet
         Iterator it = result.iterator();
         while(it.hasNext())
         {
-            out.println("try:"+it.next());
+            out.println("try:" + it.next());
         }
     }
 }
