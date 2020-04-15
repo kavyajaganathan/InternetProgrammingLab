@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Web Service Client</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Ex12 Web Service Client</h1>
+        <h2>Review Form</h2>
+        <form method="POST" action="result.jsp">
+            Name: <input type="text" name="name">
+            Age: <input type="number" name="age">
+            Rating: <input type="number" name="rating">
+            Review: <input type="text" name="review">
+            <input type="submit" value="Submit">
+        </form>
+        <h2>View Reviews</h2>
+        <form method="GET" action="view.jsp">
+            <input type="submit" value="View">
+        </form>
+    </body>
+</html>

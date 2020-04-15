@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Web Service</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Ex12 Web Service</h1>
+        <p>Accesses table `reviews` in database `iplab` at localhost:3306</p>
+        <p>Table specifications: name VARCHAR(20), age INT(3), rating INT(2), review VARCHAR(50)</p>
+        <div>
+            Web Service methods:<br>
+            <ul>
+                <li>recordReview(String name, int age, int rating, String review) returns String "OK" on success</li>
+                <li>showReview() returns String of all records in `reviews`</li>
+            </ul>
+            Access the <a href="http://localhost:8080/WebApplication/Ex12WebService?Tester">Tester</a> to check the service methods.
+        </div>
+    </body>
+</html>

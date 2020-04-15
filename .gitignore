@@ -1,3 +1,8 @@
 /Ex12/WebService/nbproject/private/
 /Ex12/WebService/build/
 *.class
+/Ex12/WebApplication/nbproject/private/
+/Ex12/WebApplication/build/
+/Ex12/WebApplicationClient/nbproject/private/
+/Ex12/WebApplicationClient/build/
+/Ex12/JavaWebApplicationClient/nbproject/private/
