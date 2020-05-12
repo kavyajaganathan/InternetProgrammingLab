@@ -3,8 +3,8 @@ Exercises for the Internet Programming Laboratory in Semester 6.
 ## Exercises
 1. Personal Website using HTML5 <br>
 2. Online Store and styling with CSS3 <br>
-3a. Form Validation using JavaScript <br>
-3b. DOM Manipulation using JavaScript <br>
+3. a. Form Validation using JavaScript <br>
+   b. DOM Manipulation using JavaScript <br>
 4. Servlets using MVC Design Pattern <br>
 5. Session Tracking with Servlets and Hidden Forms <br>
 6. Servlets with Database Connectivity <br>
