@@ -12,14 +12,14 @@
         Enter your username: <input id="usernameText" type="text" name="name"><br>
         <input type="submit" value="Login">
     </form>
-    
+
     <%
         Cookie cookie = null;
         Cookie[] cookies = null;
         String nameKey = "name";
         String nameValue = "NULL";
         cookies = request.getCookies();
-        if(cookies != null) {        
+        if (cookies != null) {
             for (int i = 0; i < cookies.length; i++) {
                 cookie = cookies[i];
                 if(nameKey.equals(cookie.getName())) {
@@ -33,7 +33,7 @@
 
     <script>
         var nameString = "<% out.print(nameValue); %>";
-        if(nameString !== "NULL") {
+        if (nameString !== "NULL") {
             usernameText.value = nameString;
             loginform.submit();
         }

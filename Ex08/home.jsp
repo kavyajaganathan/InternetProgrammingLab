@@ -21,9 +21,9 @@
     <ul>
         <li>
             <div class="itemE" id="item1">
-                <strong>Soap</strong> 
+                <strong>Soap</strong>
                 <em>$</em><em>10</em>
-                <button onclick="addtocart(this)">Add</button> 
+                <button onclick="addtocart(this)">Add</button>
             </div>
         </li>
 
@@ -62,7 +62,7 @@
         String handwashValue = "NULL";
 
         cookies = request.getCookies();
-        if(cookies != null) {  
+        if (cookies != null) {
             for (int i = 0; i < cookies.length; i++) {
                 cookie = cookies[i];
                 if (totalKey.equals(cookie.getName())) {
@@ -115,8 +115,8 @@
         }
         function renderCart() {
             htmlString = "";
-            paramString = "";     
-            paramString+="?total="+total.toString();
+            paramString = "";
+            paramString += "?total="+total.toString();
 
             if(cartList["Soap"]!==0){
                 var val = cartList["Soap"].toString();
